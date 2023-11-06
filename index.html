@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noite sem sono</title>
+</head>
+
+<body>
+    <div id="text">
+        <h2>Eiii, estou sem sono, dessa vez totalmente sem sono mesmo. Com minha mente totalmente em você nessa noite fria... Enfim, apenas quero que você entre nesse link gatinha:</h2>
+      <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;center: block;" class="btn" onclick="sim()">CLICA AQUI!!</button>
+        </div>
+    </div>
+</body>
+<style>
+    #text {
+        background: #ffffff;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: left;
+        font-family: times-new-roman;
+    }
+
+    .btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100px;
+        border-radius: 5px;
+    }
+</style>
+
+<script>
+    function sim() {
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://docs.google.com/document/d/1rQt-k7Mt_zIQSvDQJFTsKfk_ekenBrCXtt4ljin-v7o/edit?usp=drivesdk";
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+    
+</script>
+
+</html>
